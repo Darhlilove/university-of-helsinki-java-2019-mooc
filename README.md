@@ -1,4 +1,4 @@
-# University of Helsinki 2019 MOOC Java Programming Exercises
+## University of Helsinki 2019 MOOC Java Programming Exercises
 
 This repository contains my solutions to the [University of Helsinki’s MOOC Java Programming course](https://java-programming.mooc.fi/). 
 ---
