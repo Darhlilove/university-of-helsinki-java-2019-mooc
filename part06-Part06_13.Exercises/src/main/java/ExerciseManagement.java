@@ -34,7 +34,7 @@ public class ExerciseManagement {
     public boolean isCompleted(String exercise) {
         for (Exercise ex : exercises) {
             if (ex.getName().equals(exercise)) {
-                ex.isCompleted();
+                return ex.isCompleted();
             }
         }
         
@@ -42,22 +42,16 @@ public class ExerciseManagement {
     }
     
     public void remove(String exercise){
-        for (Exercise ex : exercises) {
-            if (ex.getName().equals(exercise)) {
-                exercises.remove(ex);
-            }
-        }
+        exercises.removeIf(ex -> ex.getName().equals(exercise));
     }
     
-    public boolean contains(String exercise){
-        boolean found = false;
-        
+    public boolean contains(String exercise){        
         for (Exercise ex : exercises) {
             if (ex.getName().equals(exercise)) {
-                found = true;
+                return true;
             }
         }
         
-        return found;
+        return false;
     }
 }

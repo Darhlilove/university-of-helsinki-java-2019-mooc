@@ -47,11 +47,11 @@ public class ExerciseManagementTest {
         assertFalse(management.isCompleted("Some exercise"));
     }
     
-//    @Test
-//    public void exerciseCanBeRemoved(){
-//        management.add("New exercise");
-//        management.remove("New exercise");
-//        assertFalse(management.contains("New exercise"));
-//    }
+    @Test
+    public void exerciseCanBeRemoved(){
+        management.add("New exercise");
+        management.remove("New exercise");
+        assertFalse(management.contains("New exercise"));
+    }
 
 }
